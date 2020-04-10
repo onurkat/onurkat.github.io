@@ -15,8 +15,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://onurkat.com/" />
     <meta name=”robots” content="index, follow">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="background.css">
     <style>html, body {height: 100%;background-color: #000000; color: #ffffff;overflow: hidden;user-select: none;}a:hover{text-decoration: none;}</style>
   </head>
@@ -28,14 +32,23 @@
       <div class="mx-auto">
         <h1 class="display-2">Onur Kat</h1>
         <hr size="20"></hr>
-        <h3 class="text-monospace">> Follow me on <a href="">Twitter</a>.</h3>
-        <h3 class="text-monospace">> View my code on <a href="">Github</a>.</h3>
-        <h3 class="text-monospace">> Check out my <a href="">LinkedIn</a>.</h3>
-        <h3 class="text-monospace">> Not enough? <a href="">Email</a> me.</h3>
+        <h3 class="text-monospace">> Follow me on <a href="https://twitter.com/onrkat">Twitter</a>.</h3>
+        <h3 class="text-monospace">> View my code on <a href="https://github.com/onurkat">Github</a>.</h3>
+        <h3 class="text-monospace">> Check out my <a href="https://linkedin.com/in/onurkat">LinkedIn</a>.</h3>
+        <h3 class="text-monospace">> Not enough? <a href="/cdn-cgi/l/email-protection">Email</a> me.</h3>
       </div>
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+	(() => {
+		if( 'webdriver' in navigator || document.visibilityState === 'prerender' || !location.hostname )
+		{
+			return;
+		}
+		document.querySelector( 'a[href="/cdn-cgi/l/email-protection"]' ).href = `\x6dailto:hello@${location.hostname}`;
+	})();
+	</script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
