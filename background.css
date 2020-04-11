@@ -1,7 +1,7 @@
 html,body {
   height: 100%;
   background-color: #000000;
-  overflow: hidden;
+  overflow: auto;
   color: #ffffff;
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -81,6 +81,10 @@ a:hover{text-decoration: none;}
   background: -webkit-linear-gradient(white, #38495a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+#starsgroup {
+  position: fixed;
 }
 
 .seokey {
