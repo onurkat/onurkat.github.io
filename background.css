@@ -83,6 +83,11 @@ a:hover{text-decoration: none;}
   -webkit-text-fill-color: transparent;
 }
 
+.seokey {
+position : absolute;
+left : -2000px;
+}
+
 @keyframes animStar {
   from {
     transform: translateY(0px);
